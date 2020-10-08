@@ -3,7 +3,13 @@ Basic Node Js Setup.
 
 # STEPS To Run project using node js
 
-1. Install Node.js for your platform (MacOS, Windows or Linux)
+1. Install Node.js for your platform (MacOS, Windows or Linux) using commands
+For Mac: curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
+
+For Windows: https://nodejs.org/en/#home-downloadhead
+
+For Linux: sudo apt install nodejs
+           sudo apt install npm
 
 2. Open a command prompt and type:
     mkdir myapp
